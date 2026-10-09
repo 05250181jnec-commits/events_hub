@@ -13,7 +13,7 @@ const events = [
     date: "2026-09-10",
     venue: "IT Lab",
     seats: 40,
-    image: "media/hackathon.jpg",
+    image: "media/jnec.jpg",   // match your actual file
     icon: "fa-laptop-code",
     blurb: "24-hour coding challenge."
   },
@@ -23,7 +23,7 @@ const events = [
     date: "2026-09-18",
     venue: "Auditorium",
     seats: 200,
-    image: "media/losar.jpg",
+    image: "media/jnec2.jpg",  // match your actual file
     icon: "fa-masks-theater",
     blurb: "Bhutanese new year celebration."
   },
@@ -32,7 +32,7 @@ const events = [
     title: "Inter-College Football",
     date: "2026-09-25",
     venue: "Sports Ground",
-    seats: 0,
+    seats: 0,   // sold out
     image: "media/football.jpg",
     icon: "fa-futbol",
     blurb: "Match at the sports ground."
@@ -218,7 +218,7 @@ function bindRegisterExtras() {
     sel.addEventListener("change", updateSeatsHint);
   }
 
-  // ✅ Fix: bind to reset event on form
+  // Reset confirmation popup
   const form = document.getElementById("regForm");
   if (form) {
     form.addEventListener("reset", function (e) {
