@@ -268,3 +268,21 @@ if (searchInput) {
         renderEvents(filteredEvents);
     });
 }
+
+const eventSelect = document.getElementById("event");
+const seatsHint = document.getElementById("seatsHint");
+
+if (eventSelect && seatsHint) {
+    eventSelect.addEventListener("change", function () {
+        const selectedEvent = findEventById(eventSelect.value);
+
+        if (selectedEvent) {
+            seatsHint.textContent =
+                `Available seats: ${selectedEvent.availableSeats}`;
+        } else {
+            seatsHint.textContent = "";
+        }
+    });
+}
+
+findEventById
