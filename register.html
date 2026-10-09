@@ -28,7 +28,7 @@
       <h2 class="mb-4">Event registration</h2>
 
       <form action="#" method="post" enctype="multipart/form-data" id="regForm">
-      
+      <form id="registrationForm"></form>
         <fieldset class="mb-4">
           <legend>Personal Details</legend>
           <div class="mb-3">
@@ -97,7 +97,7 @@
             <textarea class="form-control" id="remarks" name="remarks" rows="4"></textarea>
           </div>
           <div class="mb-3">
-            <label for="id_card" class="form-label">Student ID card (Photo copy)</label>
+            <label for="id_card" class="form-label">Student ID card (Photo)</label>
             <input class="form-control" type="file" id="id_card" name="id_card">
           </div>
         </fieldset>
@@ -118,6 +118,7 @@
     </div>
   </main>
   <footer>
+    <p>&copy; <span id="year"></span> Student Events</p>
   <p>&copy; <span id="year"></span> JNEC Events Hub</p>
   </footer>
 

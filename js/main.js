@@ -286,3 +286,37 @@ if (eventSelect && seatsHint) {
 }
 
 findEventById
+
+const registrationForm =
+    document.getElementById("registrationForm");
+
+if (registrationForm) {
+    registrationForm.addEventListener("submit", function (event) {
+        const interests = document.querySelectorAll(
+            'input[name="interests"]:checked'
+        );
+
+        const error = document.getElementById("err-interests");
+
+        if (interests.length === 0) {
+            event.preventDefault();
+            error.textContent = "Please select at least one interest.";
+        } else {
+            error.textContent = "";
+        }
+    });
+}
+
+const yearElement = document.getElementById("year");
+
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+}
+
+const darkToggle = document.getElementById("darkToggle");
+
+if (darkToggle) {
+    darkToggle.addEventListener("click", function () {
+        document.body.classList.toggle("dark");
+    });
+}

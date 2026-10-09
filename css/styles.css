@@ -203,4 +203,13 @@ body.dark {
     color: #2e2e2f;
 }
 
+body.dark {
+    background: #0f172a;
+    color: #e2e8f0;
+}
 
+body.dark .card,
+body.dark .intro {
+    background: #1e293b;
+    color: #e2e8f0;
+}
