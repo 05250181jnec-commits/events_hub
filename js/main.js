@@ -254,3 +254,17 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function() {
   console.log("DOM is ready!");
 });
+
+const searchInput = document.getElementById("eventSearch");
+
+if (searchInput) {
+    searchInput.addEventListener("input", function (event) {
+        const searchText = event.target.value.toLowerCase();
+
+        const filteredEvents = events.filter(function (item) {
+            return item.title.toLowerCase().includes(searchText);
+        });
+
+        renderEvents(filteredEvents);
+    });
+}

@@ -203,8 +203,4 @@ body.dark {
     color: #2e2e2f;
 }
 
-body.dark .card,
-body.dark .intro {
-    background: #1e293b;
-    color: #e2e8f0;
-}
+
