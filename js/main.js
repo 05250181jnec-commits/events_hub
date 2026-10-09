@@ -250,3 +250,7 @@ document.addEventListener("DOMContentLoaded", function () {
   bindRegisterExtras();
   console.log("Debug: main.js finished");
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("DOM is ready!");
+});
