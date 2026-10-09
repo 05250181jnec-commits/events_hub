@@ -1,6 +1,6 @@
-/* FILE: js/main.js 
-   Shared behaviour for every Events Hub page (Practical IV — JavaScript). 
-   Loaded just before </body> on all five HTML files. 
+/* FILE: js/main.js
+   Shared behaviour for every Events Hub page (Practical IV — JavaScript).
+   Loaded just before </body> on all five HTML files.
 */
 
 "use strict";
@@ -32,7 +32,7 @@ const events = [
     title: "Inter-College Football",
     date: "2026-09-25",
     venue: "Sports Ground",
-    seats: 0,   // sold out
+    seats: 0,   // Sold out
     image: "media/football.jpg",
     icon: "fa-futbol",
     blurb: "Match at the sports ground."
@@ -43,7 +43,7 @@ const events = [
     date: "2026-10-02",
     venue: "Workshop Bay",
     seats: 24,
-    image: "media/hackathon.jpg",
+    image: "media/hackathon.jpg", // or whatever file you have
     icon: "fa-robot",
     blurb: "Hands-on robots and programming."
   }
@@ -218,7 +218,6 @@ function bindRegisterExtras() {
     sel.addEventListener("change", updateSeatsHint);
   }
 
-  // Reset confirmation popup
   const form = document.getElementById("regForm");
   if (form) {
     form.addEventListener("reset", function (e) {
